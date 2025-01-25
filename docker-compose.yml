@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "7755:7755"
+    environment:
+      - GUNICORN_PORT=7755
+    volumes:
+      - ./core:/app/core
+    command: ["bash", "/app/run.sh"]
