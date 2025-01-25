@@ -1,3 +1,0 @@
-Firstly ensure docker and docker-compose is configured in your system
-
-in terminal: docker-compose up (the server will start running)
